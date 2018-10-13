@@ -17,7 +17,7 @@ public class Point
 		Point p1 = new Point(10,20);
 		Point p2 = new Point(10,20);
 		System.out.println(p1);
-		System.out.println(p1.(p2));
+		System.out.println(p1.equals(p2));
 	}	
 	@Override
 	public boolean equals(Object obj) 
@@ -39,5 +39,13 @@ public class Point
 			return false;
 		}
 		return false;
+	}
+	@Override
+	public int hashCode()
+	{
+		int result = 17;
+        result = 31 * result + x;
+        result = 31 * result + y;
+        return result;
 	}
 }
