@@ -1,3 +1,4 @@
+package com.bar;
 public class Point 
 {
 	private int x;
